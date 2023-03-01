@@ -9,13 +9,28 @@ import Foundation
 
 class ListViewModel : ObservableObject {
     
-    @Published var items: [ItemModel] = []
+    @Published var items: [ItemModel] = [] {
+        didSet{
+            saveItems()
+        }
+    }
     
     let itemsKey:String = "items_List"
     
+    init(){
+        getItems()
+    }
+    
     
     func getItems(){
-        guard 
+        guard let data = UserDefaults.standard.data(forKey: itemsKey) else {
+            return
+        }
+        
+        guard let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data) else {
+            return
+        }
+        self.items = savedItems
     }
     
     
