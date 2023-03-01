@@ -22,6 +22,29 @@ class ListViewModel : ObservableObject {
     }
     
     
+    func addItem(title:String){
+        let newItem = ItemModel(Title: title, IsCompleted: false)
+        items.append(newItem)
+    }
+    
+    
+    func updateItem(item:ItemModel){
+        if let index = items.firstIndex(where: {$0.id == item.id}){
+            items[index] = item.updateCompleted()
+        }
+    }
+    
+    
+    func deleteItem(indexSet:IndexSet){
+        items.remove(atOffsets: indexSet)
+    }
+    
+    
+    func moveItem(from:IndexSet, to:Int){
+        items.move(fromOffsets: from, toOffset: to)
+    }
+    
+    
     func getItems(){
         guard let data = UserDefaults.standard.data(forKey: itemsKey) else {
             return
@@ -39,6 +62,8 @@ class ListViewModel : ObservableObject {
             UserDefaults.standard.set(encodeData, forKey: itemsKey)
         }
     }
+    
+    
     
     
 }
