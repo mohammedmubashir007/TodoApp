@@ -15,6 +15,8 @@
 		3F9B7EFE29AF3B7D0034D2A2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B7EFD29AF3B7D0034D2A2 /* ListViewModel.swift */; };
 		3F9B7F0129AF61D00034D2A2 /* NoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B7F0029AF61D00034D2A2 /* NoListView.swift */; };
 		3F9B7F0329AF64BD0034D2A2 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B7F0229AF64BD0034D2A2 /* AddView.swift */; };
+		3F9B7F0529AF726F0034D2A2 /* listRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B7F0429AF726F0034D2A2 /* listRowView.swift */; };
+		3F9B7F0729AF73890034D2A2 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B7F0629AF73890034D2A2 /* listView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		3F9B7EFD29AF3B7D0034D2A2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		3F9B7F0029AF61D00034D2A2 /* NoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoListView.swift; sourceTree = "<group>"; };
 		3F9B7F0229AF64BD0034D2A2 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3F9B7F0429AF726F0034D2A2 /* listRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listRowView.swift; sourceTree = "<group>"; };
+		3F9B7F0629AF73890034D2A2 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				3F9B7F0029AF61D00034D2A2 /* NoListView.swift */,
 				3F9B7F0229AF64BD0034D2A2 /* AddView.swift */,
+				3F9B7F0429AF726F0034D2A2 /* listRowView.swift */,
+				3F9B7F0629AF73890034D2A2 /* listView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9B7F0729AF73890034D2A2 /* listView.swift in Sources */,
 				3F9B7EFB29AF33240034D2A2 /* ItemModel.swift in Sources */,
 				3F9B7EEE29AF31F70034D2A2 /* ContentView.swift in Sources */,
 				3F9B7F0329AF64BD0034D2A2 /* AddView.swift in Sources */,
+				3F9B7F0529AF726F0034D2A2 /* listRowView.swift in Sources */,
 				3F9B7F0129AF61D00034D2A2 /* NoListView.swift in Sources */,
 				3F9B7EFE29AF3B7D0034D2A2 /* ListViewModel.swift in Sources */,
 				3F9B7EEC29AF31F70034D2A2 /* TodoApp.swift in Sources */,
